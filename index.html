@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Handlee&family=Schoolbell&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+      window.onload = function () {
+        // selecionando o menuMobile e adicionando evento de clique
+        document
+          .querySelector(".menuMobile")
+          .addEventListener("click", function () {
+            // se o botão estiver aparecendo, faça desaparecer
+            if (
+              document.querySelector(".menu nav ul").style.display == "flex"
+            ) {
+              document.querySelector(".menu nav ul").style.display = "none";
+            } 
+            // caso contrário, apareça
+            else {
+              document.querySelector(".menu nav ul").style.display = "flex";
+            }
+          });
+      };
+    </script>
+    
+    <title>Bridget - Esl Courses</title>
+</head>
+<body>
+    <header>
+        <div class="container">      
+            <div class="logo">
+                <a href="#"><img src="assets/images/logo_060309.png" alt="logo bridget courses"></a>
+            </div>      
+            <div class="menu">
+                <nav>
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+    
+                    <ul>
+                        <a href="#"><li class="ativo">Planos</li></a>
+                        <a href="#"><li>Cursos</li></a>
+                        <a href="#">Agende uma conversa</li></a>
+                        <a href="#"><li>Alunos</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section>    
+        <div id="call">
+            <img class="tonha" src="assets/images/bannerbg3.png" alt="bannerzito">
+            <div class="box">
+                    <h1>Cruze a ponte do idioma e aprenda inglês com os melhores professores!</h1>
+                    <p>Aprender um novo idioma é uma jornada emocionante que abre portas para oportunidades
+                    ilimitadas. Entre todos os idiomas do mundo, o inglês é inegavelmente um dos mais 
+                    importantes e amplamente falados. Se você deseja cruzar a ponte do idioma e aprender 
+                    inglês com a melhor professora, está prestes a embarcar em uma aventura que pode 
+                    transformar sua vida.</p>
+                    
+                    <br>
+                    <div class="button"><a href="">Matricule-se!</div>
+                    <img src="assets/images/logo_060309.png" alt=""></a>
+            </div>             
+        </div>
+    
+    </section>
+
+    <section>
+        <div class="box_dois">
+            <div class="um">
+                <h3>Aprenda Rápido</h3>
+                Metodologias de ensino sem enrolação!
+                
+            </div>
+
+            <div class="dois">
+                <h3>Professores</h3>
+                Nossa filosofia é voltada para atenção, 
+                máxima ao aluno.
+            </div>
+
+            <div class="tres">
+                <h3>Materiais</h3>
+                Aqui na Bridget o material é gratis!
+            </div>  
+        </div>
+    </section>
+
+
+    <footer>
+        <div>
+            Desenvolvido por: Bruno Neri
+        </div>
+    </footer>
+
+</body>
+</html>
