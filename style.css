@@ -1,15 +1,21 @@
+*{
+    font-family: 'Concert One', sans-serif;
+}
+
 body {
     margin: 0px;
     padding: 0px;
     background-image: url('assets/images/bgheader.jpg');
-    background-position:top;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: fit-content;
 }
 
 header {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #fef9f5;
 }
 
@@ -24,7 +30,7 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 25px;
-    font-family: 'Schoolbell', cursive;
+    font-family: 'Concert One', sans-serif;
 }
 
 
@@ -47,9 +53,10 @@ nav li {
     padding: 0px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-direction: row;
+    gap: 20px;
 }
 
 nav a {
@@ -57,19 +64,21 @@ nav a {
     padding: 7px;
     margin: 10px;
     text-decoration: none;
-    text-transform: uppercase;
     color: #727272;
     border-bottom: 3px solid #ff6b51;
     border-radius: 5px;
-    font-size: 18px;
-    font-family: 'Handlee', cursive;
-    font-weight: bold;
+    font-size: 1.5rem;
+font-family: 'Concert One', sans-serif;
+    opacity: 0.9;
 }
 
 nav .ativo a,
 nav a:hover {
-  background-color: #9ddcd3;
-  color: #ff6b51;
+    /* background-color: #9ddcd3; */
+    color: #ff6b51;
+    background-image: url('./assets/images/bgheader.jpg');
+    background-position: left;
+    opacity: 1;
 }
 
 .menuMobile {
@@ -82,7 +91,7 @@ nav a:hover {
 }
 
 .mm_line {
-    height:4px ;
+    height: 4px;
     background-color: #ff6b51;
 }
 
@@ -96,15 +105,15 @@ nav a:hover {
     align-items: center;
 }
 
-.box h1{
-    border: 1px solid rgb(247, 247, 19);
+.box h1 {
+    border: 1px solid rgba(247, 247, 19, 0.353);
     font-size: 26px;
-    background-color: rgb(247, 247, 19);
-    border-radius: 20%;
-    padding: 3px;
+    background-color: rgba(247, 247, 19, 0.200);
+    border-radius: 50%;
+    padding: 53px;
 }
 
-.box p{
+.box p {
     margin-top: 10px;
     font-size: 25px;
     margin-bottom: 30px;
@@ -126,22 +135,24 @@ nav a:hover {
 .button a {
     text-decoration: none;
     color: #ff6b51;
-    font-size: 40px; 
-    font-family: 'Schoolbell', cursive;
+    font-size: 40px;
+    font-family:'Concert One', sans-serif;
 }
 
 .button:hover {
- zoom: 102%;
+    zoom: 102%;
 }
 
 .box_dois {
     display: flex;
     justify-content: space-around;
-    font-family: 'Schoolbell', cursive;
+    font-family:'Concert One', sans-serif;
 }
 
 
-.um, .dois, .tres {
+.um,
+.dois,
+.tres {
     display: block;
     width: 160px;
     height: 160px;
@@ -160,7 +171,7 @@ Footer {
     background-color: #f8a091;
     font-size: 15px;
     padding: 3px;
-    font-family: 'Schoolbell', cursive;
+    font-family:'Concert One', sans-serif;
 }
 
 
@@ -169,7 +180,7 @@ Footer {
 
 @media (max-width:1036px) {
     nav a {
-        font-size: 15px;
+        font-size:1rem;
     }
 }
 
@@ -179,6 +190,7 @@ Footer {
     nav a {
         font-size: 12px;
     }
+
     .tonha {
         margin-top: 100px;
         margin-left: 0px;
@@ -189,11 +201,11 @@ Footer {
         width: auto
     }
 
-    .box h1{
+    .box h1 {
         font-size: 20px;
     }
-    
-    .box p{
+
+    .box p {
         margin-top: 10px;
         font-size: 16px;
         margin-bottom: 30px;
@@ -205,10 +217,12 @@ Footer {
     }
 
     .button a {
-        font-size: 26px; 
+        font-size: 26px;
     }
 
-    .um, .dois, .tres {
+    .um,
+    .dois,
+    .tres {
         width: 100px;
         height: 100px;
         padding: 5px;
@@ -237,7 +251,7 @@ Footer {
     }
 
     .logo {
-    padding: 20px;
+        padding: 20px;
     }
 
     .menuMobile {
@@ -265,11 +279,11 @@ Footer {
         margin-top: 0;
     }
 
-    .box h1{
+    .box h1 {
         font-size: 25px;
     }
-    
-    .box p{
+
+    .box p {
         margin-top: 10px;
         font-size: 18px;
         margin-bottom: 30px;
@@ -289,7 +303,7 @@ Footer {
         background-color: #9ddcd3;
         border-radius: 50%;
     }
-       
+
 
 }
 
@@ -299,6 +313,6 @@ Footer {
 @media (max-width:376px) {
     header {
         overflow: hidden;
-        width:350px;
+        width: 350px;
     }
 }
